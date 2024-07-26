@@ -137,7 +137,7 @@ nav h1, .brand {
 }
 
 .hero-img {
-    background-image: url("/public/Images_2.png");
+    background-image: url("public/Images_2.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -329,7 +329,7 @@ main {
     /*gap: 5rem;*/
 }
 
-.bmi-calculation p, .team p {
+.bmi-calculation p, .team p, .training-text {
     color: #7d7d7d;
     font-size: 1.2rem;
 
@@ -449,31 +449,31 @@ td {
 
 .trainer-1 {
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer1.png") no-repeat top;
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer1.png") no-repeat top;
 }
 
 .trainer-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer2.png") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer2.png") no-repeat center;
     background-size: cover;
 }
 
 .trainer-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer3.png") center;
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer3.png") center;
     background-size: cover;
 }
 
 .trainer-4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer4.png") center;
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer4.png") center;
     background-size: cover;
 }
 
 .trainer-5 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer5.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer5.png");
     background-size: cover;
 }
 
 .trainer-6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer6.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer6.png");
     background-size: cover;
 }
 
@@ -524,16 +524,106 @@ footer {
     color: #8e8e8e;
     font-size: 1.8rem;
 }
-.line{
+
+.line {
     margin-top: 5rem;
     height: 2px;
     max-width: 100%;
     background-color: #2e2e2e;
 }
-.footer-text{
+
+.footer-text {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.6rem;
+}
+
+.training h1 {
+    margin-bottom: 1.5rem;
+    color: #fdfdfd;
+    font-size: 4.5rem;
+}
+
+.training {
+    margin-top: 8rem;
+}
+
+.training-img-grid-1 {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 18rem;
+}
+
+.training-img-grid-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    height: 18rem;
+}
+
+.img-1 {
+    background: linear-gradient(#55d7bc, #55d7bc), url("public/exercise1.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    font-weight: 600;
+    background-blend-mode: color;
+}
+
+.img-2 {
+    background: linear-gradient(#913c36, #661817), url("public/exercise2.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem;
+    font-weight: 600;
+    background-blend-mode: color;
+    color: #fdfdfd;
+}
+
+.img-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0, rgba(0, 0, 0, 0.4) 100%), url("public/exercise3.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    font-weight: 600;
+    background-blend-mode: darken;
+    color: #fdfdfd;
+}
+
+.img-4 {
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.6) 100%), url("public/exercise4.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    padding: 2rem;
+    justify-content: flex-end;
+    font-weight: 600;
+    background-blend-mode: darken;
+    color: #fdfdfd;
+}
+
+.img-5 {
+    background: linear-gradient( rgb(127, 158, 64 , 0.5) 0, rgb(88, 125, 35, 0.8) 0%), url("public/exercise5.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    padding: 2rem;
+    align-items: flex-end;
+    font-weight: 600;
+    background-blend-mode: color;
+    color: #fdfdfd;
+}
+
+.img-6 {
+    background:linear-gradient(rgb(165, 186, 240) 0, rgb(169, 190, 244) 100%), url("public/exercise6.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    padding: 2rem;
+    align-items: flex-end;
+    font-weight: 600;
+    background-blend-mode: soft-light;
+    color: #fdfdfd;
 }
 
 
@@ -643,7 +733,6 @@ footer {
 }
 
 /*HABITS MEDIA QUERY*/
-
 @media screen and (max-width: 576px) {
     .habits-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -837,32 +926,37 @@ footer {
 
 /*FOOTER SECTION*/
 @media screen and (max-width: 576px) {
-    .footer-links{
-        grid-template-columns: repeat(1,1fr);
+    .footer-links {
+        grid-template-columns: repeat(1, 1fr);
         place-items: flex-start;
         gap: 3rem;
     }
+
     .brand {
         margin-bottom: 1rem;
         font-size: 5rem;
     }
+
     .footer-links p {
         color: #7d7d7d;
         font-size: 1rem;
         line-height: 1.5;
     }
-    .links h1{
+
+    .links h1 {
         font-size: 2.2rem;
     }
+
     .links a {
         color: #8e8e8e;
         font-size: 1.5rem;
     }
-    .links{
+
+    .links {
         gap: 1rem;
     }
 
-    .footer-text{
+    .footer-text {
         text-align: left;
         font-size: 1.2rem;
     }
