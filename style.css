@@ -329,7 +329,7 @@ main {
     /*gap: 5rem;*/
 }
 
-.bmi-calculation p {
+.bmi-calculation p, .team p {
     color: #7d7d7d;
     font-size: 1.2rem;
 
@@ -339,16 +339,10 @@ main {
     max-width: 50%;
 }
 
-.input-group input::placeholder{
+.input-group input::placeholder {
     color: #acacac;
 }
 
-/*.input-select {*/
-/*    margin-top: 1rem;*/
-/*    display: flex;*/
-/*    width: 100%;*/
-/*    margin-bottom: 1.5rem;*/
-/*}*/
 
 .input-group {
     gap: 1rem;
@@ -382,6 +376,7 @@ main {
 .bmi-calculation button {
     font-size: 1.5rem;
     padding: 1.3rem 6rem;
+    margin-top: 1rem;
 }
 
 table, th, td {
@@ -403,6 +398,83 @@ th {
 
 td {
     color: #8e8e8e;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 1rem;
+    padding-bottom: 8rem;
+}
+
+.team h1 {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.team-img-grid {
+    margin-top: 5rem;
+    border-radius: 1.125rem;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    border-radius: 1.5rem;
+    min-height: 25rem;
+    align-self: stretch;
+}
+
+.trainer h1 {
+    font-size: 2rem;
+}
+
+.trainer p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1rem;
+}
+
+.trainer-1 {
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer1.png") no-repeat top;
+}
+
+.trainer-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer2.png") no-repeat center;
+    background-size: cover;
+}
+
+.trainer-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer3.png") center;
+    background-size: cover;
+}
+
+.trainer-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer4.png") center;
+    background-size: cover;
+}
+
+.trainer-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer5.png");
+    background-size: cover;
+}
+
+.trainer-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("/public/trainer6.png");
+    background-size: cover;
 }
 
 /*NAV MEDIA QUERY*/
@@ -433,7 +505,6 @@ td {
         display: block;
     }
 }
-
 
 /*HERO MEDIA QUERY*/
 @media screen and (max-width: 576px) {
@@ -618,6 +689,7 @@ td {
     .bmi-chart h1, .bmi-calculator h1 {
         font-size: 1.5rem;
     }
+
     .bmi-calculator {
         display: flex;
         flex-direction: column;
@@ -625,12 +697,14 @@ td {
         max-width: 90%;
         padding-top: 2rem;
     }
+
     .bmi-chart {
         margin-top: 0;
         display: flex;
         flex-direction: column;
         gap: 0;
     }
+
     table {
         margin-top: 2rem;
     }
@@ -641,14 +715,15 @@ td {
 
 
     .bmi-calculation button {
-        padding: 1rem 4rem;
-        font-size: 1rem;
+        padding: 1.2rem 4rem;
+        font-size: 1.3rem;
     }
 
     table, th, td {
         padding: 1rem;
         font-size: 1rem;
     }
+
     .input-group select, input {
         width: 100%;
         padding: 1rem;
@@ -659,5 +734,40 @@ td {
         outline: none;
         font-size: 1rem;
     }
+
+}
+
+/*TEAM SECTION*/
+
+@media screen and (max-width: 576px) {
+
+    .team-img-grid {
+        margin-top: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .trainer {
+        padding-bottom: 1rem;
+        border-radius: 1.5rem;
+        min-height: 18rem;
+    }
+
+    .trainer h1 {
+        font-size: 1.5rem;
+    }
+    .trainer-1, .trainer-4{
+        display: none;
+    }
+    .team {
+        gap: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .team h1 {
+        font-size: 2.5rem;
+    }
+    .team > p{
+        text-align: center;
+    }
+
 
 }
