@@ -473,7 +473,7 @@ td {
 }
 
 .trainer-6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("public/trainer6.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("public/trainer6.png");
     background-size: cover;
 }
 
@@ -562,67 +562,61 @@ footer {
 }
 
 .img-1 {
-    background: linear-gradient(#55d7bc, #55d7bc), url("public/exercise1.jpg") no-repeat;
+    background: linear-gradient(0deg, rgba(6, 255, 210, 0.50) 0%, rgba(6, 255, 210, 0.50) 100%), url("public/exercise1.jpg") no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     padding: 2rem;
     font-weight: 600;
-    background-blend-mode: color;
 }
 
 .img-2 {
-    background: linear-gradient(#913c36, #661817), url("public/exercise2.png") no-repeat center;
+    background: linear-gradient(0deg, rgba(200, 0, 54, 0.45), rgba(200, 0, 54, 0.45)), url("public/exercise2.png") no-repeat center;
     background-size: cover;
     display: flex;
     align-items: flex-start;
     padding: 2rem;
     font-weight: 600;
-    background-blend-mode: color;
     color: #fdfdfd;
 }
 
 .img-3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.20) 0, rgba(0, 0, 0, 0.4) 100%), url("public/exercise3.png") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("public/exercise3.png") no-repeat center;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     padding: 2rem;
     font-weight: 600;
-    background-blend-mode: darken;
     color: #fdfdfd;
 }
 
 .img-4 {
-    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.6) 100%), url("public/exercise4.png") no-repeat center;
+    background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("public/exercise4.png") no-repeat center;
     background-size: cover;
     display: flex;
     padding: 2rem;
     justify-content: flex-end;
     font-weight: 600;
-    background-blend-mode: darken;
     color: #fdfdfd;
 }
 
 .img-5 {
-    background: linear-gradient( rgb(127, 158, 64 , 0.5) 0, rgb(88, 125, 35, 0.8) 0%), url("public/exercise5.jpg") no-repeat center;
+    background: linear-gradient(0deg, rgba(47, 202, 42, 0.50) 0%, rgba(47, 202, 42, 0.50) 100%), url("public/exercise5.jpg") no-repeat;
     background-size: cover;
     display: flex;
     padding: 2rem;
     align-items: flex-end;
     font-weight: 600;
-    background-blend-mode: color;
     color: #fdfdfd;
 }
 
 .img-6 {
-    background:linear-gradient(rgb(165, 186, 240) 0, rgb(169, 190, 244) 100%), url("public/exercise6.jpg") no-repeat center;
+    background: linear-gradient(rgba(75, 112, 245, 0.5) 0, rgba(75, 112, 245, 0.5) 100%), url("public/exercise6.jpg") no-repeat center;
     background-size: cover;
     display: flex;
     padding: 2rem;
     align-items: flex-end;
     font-weight: 600;
-    background-blend-mode: soft-light;
     color: #fdfdfd;
 }
 
