@@ -39,7 +39,7 @@ nav {
     align-items: center;
 }
 
-nav h1 {
+nav h1, .brand {
     color: #E6533C;
     font-size: 3rem;
     font-style: italic;
@@ -477,6 +477,66 @@ td {
     background-size: cover;
 }
 
+footer {
+    background-color: #181818;
+}
+
+.footer-container {
+    padding: 5rem 0;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    place-items: flex-end;
+    gap: 5rem;
+}
+
+.footer-links > div {
+    align-self: flex-start;
+}
+
+
+.footer-links p {
+    color: #7d7d7d;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.brand {
+    margin-bottom: 1rem;
+    font-size: 7rem;
+}
+
+.links h1 {
+    margin-bottom: 1.5rem;
+    color: #fdfdfd;
+    font-size: 2.5rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.links a, .footer-text {
+    color: #8e8e8e;
+    font-size: 1.8rem;
+}
+.line{
+    margin-top: 5rem;
+    height: 2px;
+    max-width: 100%;
+    background-color: #2e2e2e;
+}
+.footer-text{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
 /*NAV MEDIA QUERY*/
 @media screen and (max-width: 576px) {
     .wrapper {
@@ -738,13 +798,13 @@ td {
 }
 
 /*TEAM SECTION*/
-
 @media screen and (max-width: 576px) {
 
     .team-img-grid {
         margin-top: 3rem;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .trainer {
         padding-bottom: 1rem;
         border-radius: 1.5rem;
@@ -754,9 +814,11 @@ td {
     .trainer h1 {
         font-size: 1.5rem;
     }
-    .trainer-1, .trainer-4{
+
+    .trainer-1, .trainer-4 {
         display: none;
     }
+
     .team {
         gap: 1rem;
         padding-bottom: 5rem;
@@ -765,9 +827,44 @@ td {
     .team h1 {
         font-size: 2.5rem;
     }
-    .team > p{
+
+    .team > p {
         text-align: center;
     }
 
+
+}
+
+/*FOOTER SECTION*/
+@media screen and (max-width: 576px) {
+    .footer-links{
+        grid-template-columns: repeat(1,1fr);
+        place-items: flex-start;
+        gap: 3rem;
+    }
+    .brand {
+        margin-bottom: 1rem;
+        font-size: 5rem;
+    }
+    .footer-links p {
+        color: #7d7d7d;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .links h1{
+        font-size: 2.2rem;
+    }
+    .links a {
+        color: #8e8e8e;
+        font-size: 1.5rem;
+    }
+    .links{
+        gap: 1rem;
+    }
+
+    .footer-text{
+        text-align: left;
+        font-size: 1.2rem;
+    }
 
 }
