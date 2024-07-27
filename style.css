@@ -333,10 +333,12 @@ main {
     color: #7d7d7d;
     font-size: 1.2rem;
 }
-.training-text{
+
+.training-text {
     max-width: 70%;
     line-height: 1.5;
 }
+
 .bmi-calculation {
     max-width: 50%;
 }
@@ -631,11 +633,157 @@ footer {
 }
 
 
-.team-info{
+.team-info {
     max-width: 70%;
     line-height: 1.25;
 }
 
+
+.reviews h1, .reviews .brand {
+    color: white;
+    font-size: 4rem;
+    max-width: 60%;
+    text-align: left;
+    line-height: 60px;
+
+}
+
+.reviews .brand {
+    font-size: 5rem;
+    color: #E6533C;
+
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 10rem;
+    position: relative;
+
+}
+
+.review {
+    max-width: 45%;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.review-card-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.review h2 {
+    color: rgba(0 25 85);
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.review p {
+    font-size: 1.1rem;
+    color: #7d7d7d;
+    line-height: 1.5;
+    text-align: left;
+    text-wrap: balance;
+}
+
+.review-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.review-footer {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.review-footer .name {
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: rgba(0 25 85);
+}
+
+.review-footer .location {
+    font-size: 0.9rem;
+    color: rgba(0 25 85);
+
+}
+
+.review-footer span {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #7d7d7d;
+
+}
+
+.review-footer img {
+    max-width: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #181818;
+    padding: 1rem;
+
+}
+
+.review-card-center {
+    background-color: #fff;
+    position: absolute;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.review-card-left {
+    opacity: 0.5;
+}
+
+.review-card-right {
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.previous, .next, .review-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+.next {
+    rotate: 180deg;
+}
+
+.review-count {
+    width: max-content;
+    color: #fdfdfd;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
 
 /*NAV MEDIA QUERY*/
 @media screen and (max-width: 576px) {
@@ -929,6 +1077,7 @@ footer {
 
     .team > p {
         text-align: center;
+        max-width: 90%;
     }
 
 
@@ -971,4 +1120,100 @@ footer {
         font-size: 1.2rem;
     }
 
+}
+
+/*TRAINING SECTION*/
+@media screen and (max-width: 576px) {
+    .training {
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .training h1 {
+        font-size: 2.5rem;
+    }
+
+    .training p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .training-img-grid-1 {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        height: 11rem;
+    }
+
+    .training-img-grid-1 p, .training-img-grid-2 p {
+        font-size: 0.8rem;
+    }
+
+    .training-img-grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        height: 11rem;
+    }
+
+    .img-3, .img-6 {
+        display: none;
+    }
+}
+
+/*REVIEW SECTION*/
+@media screen and (max-width: 576px) {
+
+    .reviews h1, .reviews .brand {
+        color: white;
+        font-size: 1.5rem;
+        max-width: 100%;
+        text-align: left;
+        line-height: 1;
+        margin-bottom: -3rem;
+
+    }
+
+    .reviews .brand {
+        font-size: 4rem;
+        color: #E6533C;
+    }
+
+    .review-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 20rem;
+        margin-bottom: -12rem;
+    }
+
+    .review {
+        max-width: 100%;
+    }
+
+    .review-card-left, .review-card-right {
+        display: none;
+    }
+
+    .review h2 {
+        font-size: 1rem;
+    }
+
+    .review p {
+        font-size: 1.05rem;
+        line-height: 1.1;
+
+    }
+    .review-heading img{
+        max-width: 6%;
+    }
+    .review-footer img {
+        max-width: 5rem;
+    }
+
+    .review-card-center {
+        position: relative;
+    }
+    .buttons{
+        margin-top: 0;
+    }
 }
