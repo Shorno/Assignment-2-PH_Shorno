@@ -638,7 +638,9 @@ footer {
     line-height: 1.25;
 }
 
-
+.reviews {
+    margin-top: 10rem;
+}
 .reviews h1, .reviews .brand {
     color: white;
     font-size: 4rem;
@@ -782,7 +784,6 @@ footer {
     gap: 2rem;
     justify-content: center;
     margin-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 /*NAV MEDIA QUERY*/
