@@ -28,8 +28,7 @@ img {
 }
 
 header {
-    background: linear-gradient(#000000, #434343, #000000);
-    /*learn more about bg gradiant*/
+    background: linear-gradient(#111, rgb(35, 35, 35), #000);
 }
 
 nav {
