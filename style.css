@@ -272,11 +272,15 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 1.5rem;
+    object-position: 0 100%;
 }
 
 .cta__img {
     max-width: 40%;
+
 }
+
+
 
 .secondary-cta__text {
     display: flex;
@@ -284,6 +288,7 @@ main {
     gap: 1.5rem;
     margin-left: 2rem;
     margin-top: 1rem;
+    flex: 1;
 }
 
 .secondary-cta h1 {
